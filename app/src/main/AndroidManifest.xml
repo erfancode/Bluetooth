@@ -37,6 +37,7 @@
             android:name=".TerminalActivity"
             android:label="@string/title_activity_terminal" >
         </activity>
+        <activity android:name="app.akexorcist.bluetotohspp.library.DeviceList"/>
     </application>
 
 </manifest>

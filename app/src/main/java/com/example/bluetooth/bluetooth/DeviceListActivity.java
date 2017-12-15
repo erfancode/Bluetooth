@@ -38,6 +38,7 @@ public class DeviceListActivity extends AppCompatActivity {
             public void onDataReceived(byte[] data, String message) {
                 Log.i("Check", "Length : " + data.length);
                 Log.i("Check", "Message : " + message);
+                Toast.makeText(getApplicationContext(),data.toString(),Toast.LENGTH_LONG);
             }
         });
 
@@ -102,5 +103,6 @@ public class DeviceListActivity extends AppCompatActivity {
                 bt.send("Text", true);
             }
         });
+
     }
 }
